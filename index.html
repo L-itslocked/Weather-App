@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/11e289fd06.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <background class="background-image">
+        <img
+          src="images/alaska-backdrop.jpg"
+          class="alaska-backdrop"
+          width="150%"
+        />
+      </background>
+      <div class="temp-app">
+        <div class="row">
+          <div class="col-6">
+            <h2>Today</h2>
+            <h1 id="currentTemperature">
+              <span id="currentTemp"> 14 </span>
+              <span type="button" id="fahrenheit">°F | </span>
+              <span type="button" id="celsius">°C </span>
+            </h1>
+            <h3>Wednesday, October 3</h3>
+          </div>
+          <div class="col-6">
+            <h6 class="weatherConditions">
+              <br />
+              <br />
+              <br />
+              <div id="wind">Wind:</div>
+              <div id="humidity">Humidity:</div>
+              <div id="description"></div>
+            </h6>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col">
+            <h5>5-day forecast</h5>
+          </div>
+        </div>
+        <h6>
+          <div class="row">
+            <div class="col-2">
+              Thursday<br />
+              <i class="fa-solid fa-cloud-sun cloudy"></i>
+              <br />
+              66°/48°
+            </div>
+            <div class="col-2">
+              Friday <br />
+              <i class="fa-solid fa-cloud-sun"></i>
+              <br />
+              65°/49°
+            </div>
+            <div class="col-2">
+              Saturday <br />
+              <i class="fa-solid fa-cloud-rain"></i>
+              <br />
+              57°/53°
+            </div>
+            <div class="col-2">
+              Sunday <br />
+              <i class="fa-solid fa-cloud-showers-heavy"></i>
+              <br />
+              57°/46°
+            </div>
+            <div class="col-2">
+              Monday <br />
+              <i class="fa-solid fa-cloud-showers-heavy"></i>
+              <br />
+              53°/44°
+            </div>
+          </div>
+        </h6>
+        <div class="row">
+          <h1>
+            <div id="location">- Ketchikan, Alaska -</div>
+          </h1>
+        </div>
+        <form class="searchForm">
+          <div class="row">
+            <div class="col-12">
+              <input
+                type="search"
+                class="searchbar"
+                placeholder="Enter your city"
+                autocomplete="off"
+                id="search-bar-form"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <button type="submit" id="submit-button" class="search-control">
+                Search 🔍
+              </button>
+            </div>
+            <div class="col-2">
+              <button
+                class="current-location-button"
+                id="current-location-button"
+              >
+                Current 📍
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer>coded by: Laura Doyon</footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
