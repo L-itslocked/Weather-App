@@ -86,7 +86,10 @@ footer {
 
 #celsius,
 #fahrenheit {
-  border: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #26383f;
+  font-family: "lora", serif;
 }
 
 #location {
@@ -113,16 +116,17 @@ button {
   background-color: #fff;
   border: solid #af7c41;
   border-radius: 5px;
-  padding: 3px 8px;
   width: 100px;
   display: block;
   text-align: center;
 }
 #current-location-button {
   margin: 10px 50px auto;
+  padding: 3px 5px;
 }
 #submit-button {
   margin: 10px auto;
+  padding: 3px 8px;
 }
 
 button:hover {
