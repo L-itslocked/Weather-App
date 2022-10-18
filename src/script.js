@@ -114,3 +114,5 @@ function showPosition(position) {
 }
 
 navigator.geolocation.getCurrentPosition(showPosition);
+
+searchCity("Ketchikan");
