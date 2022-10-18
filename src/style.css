@@ -24,7 +24,7 @@ h6 {
 }
 h5 {
   text-decoration: underline;
-  margin: 30px;
+  margin: 20px;
 }
 
 h6 {
@@ -56,11 +56,6 @@ footer {
   font-family: "lora", serif;
 }
 
-.umbrella {
-  display: block;
-  margin: -50px 100px auto;
-  max-width: 400px;
-}
 
 .temp-app {
   margin: -600px 150px auto;
@@ -112,23 +107,22 @@ footer {
   cursor: pointer;
 }
 button {
+  display: block;
   color: #af7c41;
   background-color: #fff;
   border: solid #af7c41;
   border-radius: 5px;
   width: 100px;
-  display: block;
   text-align: center;
-}
-#current-location-button {
-  margin: 10px 50px auto;
-  padding: 3px 5px;
-}
-#submit-button {
+  padding: 6px 10px;
   margin: 10px auto;
-  padding: 3px 8px;
 }
-
+.search-control {
+  margin: 10px auto;
+  display: block;
+  padding: 6px 10px;
+  position: absolute;
+}
 button:hover {
   background-color: #af7c41;
   color: #fff;
