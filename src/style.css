@@ -1,6 +1,7 @@
 body {
   max-width: 700px;
 }
+
 h1,
 h2,
 h3,
@@ -22,6 +23,7 @@ h5,
 h6 {
   display: block;
 }
+
 h5 {
   text-decoration: underline;
   margin: 20px;
@@ -45,14 +47,21 @@ footer {
   color: black;
   margin: 30px 5px auto;
 }
+
 #description {
   font-style: italic;
 }
-
+#weather-icon {
+  background: #fff;
+  border-radius: 25px;
+}
 .weatherConditions {
   text-align: left;
   color: #26383f;
   font-family: "lora", serif;
+  display: block;
+  margin: 0 auto;
+  line-height: 20 px;
 }
 
 .temp-app {
@@ -104,23 +113,24 @@ footer {
   width: 100%;
   cursor: pointer;
 }
+
 button {
-  display: block;
   color: #af7c41;
   background-color: #fff;
   border: solid #af7c41;
   border-radius: 5px;
-  width: 100px;
+  width: 110px;
   text-align: center;
   padding: 6px 10px;
-  margin: 10px auto;
+  margin: 10px 0 10px 65px;
 }
+
 .search-control {
   margin: 10px auto;
-  display: block;
   padding: 6px 10px;
   position: absolute;
 }
+
 button:hover {
   background-color: #af7c41;
   color: #fff;

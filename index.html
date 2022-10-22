@@ -39,23 +39,23 @@
       <div class="temp-app">
         <div class="row">
           <div class="col-6">
-            <h2>Today</h2>
+         <h2>Today</h2>
             <h1 id="currentTemperature">
               <span id="currentTemp"> 14 </span>
-              <span> <a href="#" id="fahrenheit"> °F | </a></span>
-              <span><a href="#" id="celsius">°C</a> </span>
+              <span type="button" id="fahrenheit">°F | </span>
+              <span type="button" id="celsius">°C </span>
             </h1>
             <h3>Wednesday, October 3</h3>
+          
           </div>
           <div class="col-6">
             <h6 class="weatherConditions">
-              <br />
-              <br />
-              <br />
+              <div><img src=".." alt="" id="weather-icon"></div>
               <div id="wind">Wind:</div>
               <div id="humidity">Humidity:</div>
               <div id="description"></div>
             </h6>
+          
           </div>
         </div>
         <br />
@@ -114,30 +114,25 @@
                 id="search-bar-form"
               />
             </div>
-          </div>
-          <div class="row">
-            <div class="col-1">
-              <button type="submit" id="submit-button" class="search-control">
-                Search 🔍
-              </button>
             </div>
-            <div class="col-4">
-              <button
-                class="current-location-button"
-                id="current-location-button"
-              >
-                Current 📍
-              </button>
+            <div class="row">
+              <div class="col-1">
+                <button type="submit" id="submit-button" class="search-control">
+                  Search 🔍
+                </button> </div>
+                <div class="col-2">
+                  <button
+                    class="current-location-button"
+                    id="current-location-button"
+                  >Current 📍
+                  </button>
+                </div>
+              
             </div>
           </div>
         </form>
       </div>
-      <footer>
-        <a href="https://github.com/L-itslocked/Weather-App" target="_blank"
-          >Open-source code</a
-        >
-        by: Laura Doyon
-      </footer>
+      <footer>coded by: Laura Doyon</footer>
     </div>
     <script src="src/script.js"></script>
   </body>
