@@ -52,8 +52,9 @@ footer {
   font-style: italic;
 }
 #weather-icon {
-  background: #fff;
+  background: #af7c41;
   border-radius: 25px;
+  margin-bottom: 10px;
 }
 .weatherConditions {
   text-align: left;
