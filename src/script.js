@@ -49,19 +49,22 @@ function weatherCondition(response) {
   let h1Temp = document.querySelector("#currentTemp");
   let currentCity = document.querySelector("#location");
   let yourLocation = response.data.name;
-  console.log(yourLocation);
   let temperature = Math.round(response.data.main.temp);
-  console.log(temperature);
+  let cityHumidity = document.querySelector("#humidity");
+  let cityWind = document.querySelector("#wind");
+  let cityDescription = document.querySelector("#description");
+  let weatherIcon = document.querySelector("#weather-icon");
 
   h1Temp.innerHTML = `${temperature}`;
   currentCity.innerHTML = `- ${yourLocation} -`;
-
-  let cityHumidity = document.querySelector("#humidity");
   cityHumidity.innerHTML = "Humidity: " + response.data.main.humidity + "%";
-  let cityWind = document.querySelector("#wind");
   cityWind.innerHTML = "Wind speed: " + Math.round(response.data.wind.speed);
-  let cityDescription = document.querySelector("#description");
   cityDescription.innerHTML = response.data.weather[0].main;
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  weatherIcon.setAttribute("alt", response.data.weather[0].description);
 
   function convertToF(event) {
     event.preventDefault();
