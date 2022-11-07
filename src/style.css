@@ -88,6 +88,10 @@ footer {
   max-width: 100%;
 }
 
+small {
+  font-size: 18px;
+}
+
 #celsius,
 #fahrenheit {
   text-emphasis: none;
